@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQuery quotes</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-static-top navbar-dark bg-inverse">
+    <a class="navbar-brand" href="#">jQuery quotes</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">All <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Author</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target=".js-modal-newquote">
+          New
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <figure class="figure">
+            <img class="figure-img img-fluid img-rounded" src="images/einstein.jpg" alt="">
+          </figure>
+        </div>
+        <div class="col-md-10">
+          <h1 class="display-3">Albert Einstein</h1>
+          <a href="#" class="btn btn-primary" id="js-request">Charger le texte</a>
+          <p id="js-bio"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- insert JavaScript here -->
+</body>
+</html>
