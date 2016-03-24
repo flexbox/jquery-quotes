@@ -18,7 +18,7 @@
         <a class="nav-link" href="author.html">Author</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#js-modal-newquote">
           New
         </a>
       </li>
@@ -34,11 +34,48 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div id="js-content"></div>
+        <div id="js-content">
+
+        <blockquote>
+          
+        </blockquote>
+          
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="modal fade" id="js-modal-newquote">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Nouvelle citation</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="quote">Citation</label>
+          <input type="text" class="form-control" id="quote" name="quote" rows="10"/>
+        </div>
+        <div class="form-group">
+          <label for="author">Auteur</label>
+          <input type="text" class="form-control" id="author" name="author"/>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Ajouter</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
   <!-- insert JavaScript here -->
+  <script src="javascripts/jquery-2.1.4.min.js"></script>
+  <script src="javascripts/tether.min.js"></script>
+  <script src="javascripts/bootstrap.js"></script>
+  <script src="javascripts/app.js"></script>
 </body>
 </html>
