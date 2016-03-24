@@ -17,13 +17,42 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Author</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="modal" data-target=".js-modal-newquote">
+       <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#js-modal" data-whatever="Quote" href="#">
           New
         </a>
       </li>
     </ul>
   </nav>
+
+ <div class="modal fade" id="js-modal" tabindex="-1" role="dialog" aria-labelledby="js-modal-Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="js-modal-Label">New message</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="form-control-label">Quote:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="form-control-label">Author:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="jumbotron">
     <div class="container">
@@ -43,5 +72,9 @@
   </div>
 
   <!-- insert JavaScript here -->
+  <script src="javascripts/jquery-2.1.4.min.js"></script>
+  <script src="javascripts/tether.min.js"></script>
+  <script src="javascripts/bootstrap.js"></script>
+  <script src="javascripts/myjs.js"></script>
 </body>
 </html>
