@@ -7,9 +7,14 @@ We are going to use [Bootstrap V4](http://v4-alpha.getbootstrap.com).
 
 ## TODO
 
+#### Create a file for your JavaScript
+
+For example `./javascript/scripts.js`
+
 #### Fetch json data form `http://webcitation.fr/quotes.json`
 
-Add a nice `<blockquote>` like this in `js-content`
+1. You can [explore this link](http://lmgtfy.com/?q=jquery+fetch+data+json)
+1. Add a nice `<blockquote>` like this in `#js-content`
 
 ![Bootstrap quote](images/quote.png)
 
